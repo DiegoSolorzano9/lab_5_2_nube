@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // Endpoint requerido para el Health Check del pipelinee
-app.get('/error', (req, res) => {
+app.get('/health', (req, res) => {
     res.status(200).json({ 
         status: 'ok', 
         version: '1.0.0',
