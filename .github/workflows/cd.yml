@@ -36,6 +36,7 @@ jobs:
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Deploy remoto via SSH
         uses: appleboy/ssh-action@v1.0.0
