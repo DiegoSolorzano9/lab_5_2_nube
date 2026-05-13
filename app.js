@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-// Endpoint requerido para el Health Check del pipeline
+// Endpoint requerido para el Health Check del pipelinee
 app.get('/health', (req, res) => {
     res.status(200).json({ 
         status: 'ok', 
